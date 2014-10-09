@@ -1,0 +1,108 @@
+
+
+body {
+    background: grey;
+    text-align: center;
+}
+
+.board {
+    margin: 0;
+    padding: 0;
+}
+
+.board-row {
+    padding: 0;
+    margin: 0;
+    /*line-height: 0;*/
+    height: 4em;
+}
+
+.cell {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    padding: 0;
+    margin: 0;
+}
+
+.cell_black {
+    background-image: url(img/black.png);
+    background-repeat: no-repeat;
+    background-size: 3em;
+    background-position: center center;
+}
+
+.cell_hover {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.cell_white {
+    background-image: url(img/white.png);
+    background-repeat: no-repeat;
+    background-size: 3em;
+    background-position: center center;
+}
+
+.cell_1 {
+    background-color: #FFBFCE;
+}
+
+.cell_2 {
+    background-color: #BFE6FF;
+}
+
+.start-screen {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.start-screen-img {
+    width: 2em;
+    vertical-align: middle;
+    margin: 0.2em;
+}
+
+.start-screen-go {
+    width: 50%;
+    margin-left: 25%;
+    height: 3em;
+}
+
+.status-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.status-bar .content {
+    background: grey;
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.status-bar.hidden {
+    transition: all 0.3s ease;
+    top: -2em;
+}
+
+.status-bar__toggler {
+    background: grey;
+    cursor: pointer;
+    font-size: 1.5em;
+    line-height: 1em;
+    vertical-align: bottom;
+    padding: 0.3em 0.3em 0 0.3em;
+    display: inline-block;
+}
+
+.status-bar__toggler:hover {
+    background: rgb(200, 200, 200);
+}
+
+.cell_winning {
+    background-color: green;
+}
